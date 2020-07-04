@@ -32,9 +32,7 @@
     Writeup:
     <ul>
       <li>Drafts: <a href="https://scrapbox.io/cormoran/">scrapbox</a></li>
-      <li>
-        Miscellaneous: <a href="http://localhost:1313/blog/">cormoran's 雑記</a>
-      </li>
+      <li>Miscellaneous: <a href="/blog/">cormoran's 雑記</a></li>
     </ul>
   </li>
 </ul>
@@ -42,15 +40,14 @@
 <h1>Latest articles</h1>
 
 <div class="posts-list">
-{{ with .Site.GetPage "/posts" }}
-    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
-        <div class="post">
-            <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>    
-            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
-            {{ .Summary }}
-        </div>    
-    {{ end }}
-{{ end }}
+  {{ with .Site.GetPage "/posts" }} {{ range first 3 (sort .Data.Pages "Date"
+  "desc" (where .Pages ".Params.private" "!=" true))}}
+  <div class="post">
+    <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
+    <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+    {{ .Summary }}
+  </div>
+  {{ end }} {{ end }}
 </div>
 <!-- 
 <h1>Latest photos</h1>
