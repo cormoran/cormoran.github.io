@@ -1,0 +1,4 @@
+baseURL = "http://www.cormoran.me/"
+languageCode = "ja"
+title = "cormoran"
+theme = "hugo-theme-console"
