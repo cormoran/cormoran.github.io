@@ -2,3 +2,15 @@ baseURL = "http://www.cormoran.me/"
 languageCode = "ja"
 title = "cormoran"
 theme = "hugo-theme-console"
+
+[params]  
+
+  [[params.navlinks]]
+  name = "Articles"
+  url = "article/"
+
+  [[params.navlinks]]
+  name = "雑記"
+  url = "blog/"
+  
+  
