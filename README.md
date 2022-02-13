@@ -1,4 +1,3 @@
 # cormoran.github.io
 
-- Release: `./deploy.sh`
-- Generated files are managed in [release](https://github.com/cormoran/cormoran.github.io/tree/release) branch and published by github pages.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3cbc4b3e-69d7-4e32-a0ed-bfe702247223/deploy-status)](https://app.netlify.com/sites/cormoran/deploys)
