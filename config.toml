@@ -1,16 +1,36 @@
 baseURL = "https://www.cormoran.me/"
 languageCode = "ja"
-title = "cormoran"
-theme = "hugo-theme-console"
+title = "cormoran.me"
+theme = "hugo-theme-myblog"
+pluralizeListTitles = false
+copyright = "2014- cormoran"
 
-[params]  
+[params]
 
-  [[params.navlinks]]
-  name = "Articles"
-  url = "article/"
+author = "cormoran"
+short_profile = ""
+logo = "/img/cormoran.jpg"
+twitter = "cormoran707"
+github = "cormoran"
+changelog_url = "https://github.com/cormoran/cormoran.github.io/commits/master/content"
+report_url = "https://github.com/cormoran/cormoran.github.io/issues"
+edit_url = "https://github.com/cormoran/cormoran.github.io/edit/master/content"
+google_custom_search = "007779444469775643741:gxf1addhpnq"
 
-  [[params.navlinks]]
-  name = "雑記"
-  url = "blog/"
-  
-  
+[[menu.main]]
+	name = "雑記"
+	weight = 1
+	identifier = "top"
+	url = "/blog"
+
+[[menu.main]]
+	name = "Articles"
+	weight = 2
+	identifier = "new-article"
+	url = "/article"
+
+[[menu.main]]
+	name = "About"
+	weight = 3
+	identifier = "about"
+	url = "/"

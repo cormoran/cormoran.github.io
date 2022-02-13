@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+
+  <body>
+    <div class="container">
+      <header>{{ partial "header.html" . }}</header>
+
+      <div class="row">
+        <div class="col-sm-3">{{ partial "side.html" . }}</div>
+        <div class="col-sm-9 main">
+          <h1>Links</h1>
+
+          <ul>
+            <li>Github: <a href="https://github.com/cormoran">cormoran</a></li>
+            <li>
+              Twitter:
+              <a href="https://twitter.com/cormoran707">@cormoran707</a>
+            </li>
+            <li>
+              Instagram:
+              <ul>
+                <li>
+                  <a href="https://www.instagram.com/cormoran.journey/"
+                    >journey</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/cormoran.cooking/"
+                    >cooking</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              Writeup:
+              <ul>
+                <li>
+                  Drafts: <a href="https://scrapbox.io/cormoran/">scrapbox</a>
+                </li>
+                <li>Miscellaneous: <a href="/blog/">cormoran's 雑記</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- <h1>Latest articles</h1>
+
+<div class="posts-list">
+{{ with .Site.GetPage "/blog" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+            <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
+            <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+            {{ .Summary }}
+        </div>
+    {{ end }}
+{{ end }}
+</div> -->
+
+          <footer>{{ partial "footer.html" . }}</footer>
+        </div>
+      </div>
+    </div>
+    {{ partial "foot.html" . }}
+  </body>
+</html>
+<!--
+
+<img
+  src="/img/cormoran.jpg"
+  style="border-radius: 50%; width: 75px; height: 75px;"
+/>
+
+<h1>About</h1>
+
+<p>
+  Building:)
+</p>
+<br />
+
+
+</div> -->
